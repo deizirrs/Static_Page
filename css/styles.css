@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Heebo', sans-serif;
+}
+
+body{
+  background-color: #f7f7f7;
+}
+
+header{
+  background-color: #ffff;
+}
+
+header #navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1777;
+  padding:0 2rem;
+  max-width: 75rem;
+  margin: 0 auto ;
+}
+
+header #navbar .nav-brand{
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #333;
+}
+
+header #navbar .nav-list{
+  
+}
