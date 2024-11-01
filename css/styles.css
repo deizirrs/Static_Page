@@ -18,16 +18,18 @@ body{
 
 header{
   background-color: #ffff;
+  height: 5rem;
 }
 
 header #navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1777;
+  background-color: #8FBC8F;
   padding:0 2rem;
   max-width: 75rem;
   margin: 0 auto ;
+  height: 5rem;
 }
 
 header #navbar .nav-brand{
@@ -38,5 +40,20 @@ header #navbar .nav-brand{
 }
 
 header #navbar .nav-list{
-  
+  list-style: none;
+  display:flex ;
+  gap: 2rem;
+
+}
+
+header #navbar .nav-list .nav-item a{
+  text-decoration: none;
+  color: #2f4f4f;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+header #navbar .nav-list .nav-item a:hover{
+  color: #5F9EA0;
+  transition: color 0.3s;
 }
