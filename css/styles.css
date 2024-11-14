@@ -25,7 +25,6 @@ header #navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #8FBC8F;
   padding:0 2rem;
   max-width: 75rem;
   margin: 0 auto ;
@@ -56,4 +55,50 @@ header #navbar .nav-list .nav-item a{
 header #navbar .nav-list .nav-item a:hover{
   color: #5F9EA0;
   transition: color 0.3s;
+}
+
+/* SECTION BANNER */
+
+main{
+  margin-top: 6rem;
+}
+
+main #banner{
+  display: flex;
+  justify-content: space-between;
+  max-width: 75rem;
+  padding:0 2rem;
+  margin: 0 auto;
+}
+
+main #banner .banner-content .banner-content-title{
+font-size:2.75rem;
+font-weight:700;
+line-height:3.75rem ;
+margin-bottom:2.5rem ;
+}
+
+main #banner .banner-content .banner-content-subtitle{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  max-width: 500px;
+  margin-bottom: 38px;
+}
+
+main #banner .banner-content .banner-content-button{
+background-color: #5F9EA0 ;
+color: white;
+font-size: 20px;
+font-weight: 500;
+border-radius: 2px;
+padding: 8px 24px;
+border: none;
+}
+
+main #banner .banner-image{
+border-radius: 50%;
+width: 100%;
+max-width: 400px;
+
 }
