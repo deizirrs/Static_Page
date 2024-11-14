@@ -9,76 +9,89 @@ button,
 input,
 select,
 textarea {
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
-body{
+body {
   background-color: #f7f7f7;
 }
 
-header{
+header {
   background-color: #ffff;
   height: 5rem;
 }
 
-header #navbar{
+header #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:0 2rem;
+  padding: 0 2rem;
   max-width: 75rem;
-  margin: 0 auto ;
+  margin: 0 auto;
   height: 5rem;
 }
 
-header #navbar .nav-brand{
+header #navbar .nav-brand {
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 700;
   color: #333;
 }
 
-header #navbar .nav-list{
+header #navbar .nav-list {
   list-style: none;
-  display:flex ;
+  display: flex;
   gap: 2rem;
-
 }
 
-header #navbar .nav-list .nav-item a{
+header #navbar .nav-list .nav-item a {
   text-decoration: none;
   color: #2f4f4f;
   font-size: 1.25rem;
   font-weight: 500;
 }
 
-header #navbar .nav-list .nav-item a:hover{
-  color: #5F9EA0;
+header #navbar .nav-list .nav-item a:hover {
+  color: #5f9ea0;
   transition: color 0.3s;
+}
+
+header #navbar .hamburguer-menu{
+  display: none;
+}
+
+@media(max-width:740px ){
+  header #navbar .hamburguer-menu{
+    display: block;
+  }
+
+  header #navbar .nav-list {
+    display: none;
+  }
 }
 
 /* SECTION BANNER */
 
-main{
+main {
   margin-top: 6rem;
 }
 
-main #banner{
+main #banner {
   display: flex;
   justify-content: space-between;
   max-width: 75rem;
-  padding:0 2rem;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
-main #banner .banner-content .banner-content-title{
-font-size:2.75rem;
-font-weight:700;
-line-height:3.75rem ;
-margin-bottom:2.5rem ;
+main #banner .banner-content .banner-content-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+  margin-bottom: 2.5rem;
 }
 
-main #banner .banner-content .banner-content-subtitle{
+main #banner .banner-content .banner-content-subtitle {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -86,19 +99,94 @@ main #banner .banner-content .banner-content-subtitle{
   margin-bottom: 38px;
 }
 
-main #banner .banner-content .banner-content-button{
-background-color: #5F9EA0 ;
-color: white;
-font-size: 20px;
-font-weight: 500;
-border-radius: 2px;
-padding: 8px 24px;
-border: none;
+main #banner .banner-content .banner-content-button {
+  background-color: #5f9ea0;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 8px 24px;
+  border: none;
 }
 
-main #banner .banner-image{
-border-radius: 50%;
-width: 100%;
-max-width: 400px;
+main #banner .banner-image {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 400px;
+}
 
+@media (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  main #banner .banner-content {
+    text-align: center;
+  }
+}
+
+/* SECTION POSTS */
+
+section#posts {
+  margin-top: 71px;
+  background-color: #b5d1e4d8;
+}
+
+section#posts .posts-content {
+  padding: 0 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+section#posts .posts-content .posts-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+section#posts .posts-content .posts-content-header .section-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+section#posts .posts-content .posts-content-header .section-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+section#posts .posts-content .posts-content-header .view-all-link {
+  text-decoration: none;
+  color: #00a8cc;
+}
+
+section#posts .posts-content .posts-cards {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+section#posts .posts-content .posts-cards .post-card {
+  background-color: #ffff;
+  padding: 24px;
+}
+
+section#posts .posts-content .posts-cards .post-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 27px;
+}
+
+section#posts .posts-content .posts-cards .post-card span {
+  font-size: 18px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+@media (max-width: 740px) {
+  section#posts .posts-content .posts-cards {
+    flex-direction: column;
+  }
 }
